@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    }
+    /* Mengatur 3 kolom yang sama posisinya bersebelahan satu sama lain
+    */
+    .column {
+        background-color: white;
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+    }
+    /* Menghapus float setelah kolom */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Tata letak responsif - membuat ketiga kolom saling bertumpuk, bukan
+    bersebelahan */
+    @media screen and (max-width:600px) {
+    .kolom {
+    width: 100%;
+    }
+    }
